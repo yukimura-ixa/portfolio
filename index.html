@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ณภัทร พ่อบุตรดี — Full-stack Developer</title>
+  <meta name="description" content="พอร์ตโฟลิโอของ ณภัทร พ่อบุตรดี นักพัฒนาเว็บ Full-stack (Next.js, TypeScript, Go) บัณฑิต IT สจล. เกียรตินิยมอันดับ 1">
+  <meta property="og:title" content="ณภัทร พ่อบุตรดี — Full-stack Developer">
+  <meta property="og:description" content="ผลงานระบบที่ใช้งานจริง: ระบบจัดตารางสอนสำหรับโรงเรียน และแอปรีไซเคิลบน LINE ที่ใช้ AI">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/botty-home.webp">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@500;600;700&family=IBM+Plex+Sans+Thai:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="nav" id="top">
+  <div class="wrap nav-inner">
+    <a href="#top" class="brand"><span class="brand-mark">ณ</span>ณภัทร พ่อบุตรดี</a>
+    <button class="nav-toggle" aria-label="เปิดเมนู" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <nav class="nav-links">
+      <a href="#projects">ผลงาน</a>
+      <a href="#experience">ประสบการณ์</a>
+      <a href="#skills">ทักษะ</a>
+      <a href="#contact" class="nav-cta">ติดต่อ</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-text">
+        <p class="eyebrow">Full-stack Developer · นครพนม / ทำงานได้ทั่วประเทศ</p>
+        <h1>สร้างระบบที่<br><span class="hl">มีคนใช้งานจริง</span></h1>
+        <p class="lead">
+          สวัสดีครับ ผม <strong>ณภัทร พ่อบุตรดี (Napat)</strong> นักพัฒนาเว็บที่ชอบเปลี่ยนงานยุ่งยากในองค์กรให้เป็นระบบที่ใช้ง่าย
+          ตั้งแต่ระบบจัดตารางสอนที่โรงเรียนใช้อยู่ทุกภาคเรียน ไปจนถึงแอปรีไซเคิลบน LINE ที่ใช้ AI ตรวจขวดพลาสติก
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">ดูผลงาน</a>
+          <a href="https://github.com/yukimura-ixa" class="btn btn-ghost" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </div>
+
+      <aside class="hero-card">
+        <dl class="facts">
+          <div><dt>การศึกษา</dt><dd>วท.บ. เทคโนโลยีสารสนเทศ<br>สจล. (KMITL)</dd></div>
+          <div><dt>เกรดเฉลี่ย</dt><dd><span class="num">3.53</span> เกียรตินิยมอันดับ 1</dd></div>
+          <div><dt>TOEIC</dt><dd><span class="num">840</span></dd></div>
+          <div><dt>ถนัด</dt><dd>Next.js · TypeScript · Go · PostgreSQL · Firebase</dd></div>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============ FEATURED PROJECTS ============ -->
+  <section id="projects" class="section">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="kicker">01 — ผลงานเด่น</p>
+        <h2>โปรเจกต์ที่ใช้งานจริง</h2>
+      </header>
+
+      <!-- Timetable -->
+      <article class="feature reveal">
+        <div class="feature-body">
+          <div class="feature-tags"><span class="badge badge-live">● ใช้งานจริงในโรงเรียน</span><span class="badge">2566 – ปัจจุบัน</span></div>
+          <h3>ระบบจัดตารางเรียนตารางสอนสำหรับโรงเรียนมัธยม</h3>
+          <p>
+            เริ่มจากโปรเจกต์จบการศึกษาที่ สจล. ทำร่วมกับเพื่อน แล้วผมพัฒนาต่อหลังเรียนจบจนกลายเป็นระบบที่โรงเรียนใช้จัดตารางจริง
+            ช่วยให้ฝ่ายวิชาการจัดตารางได้เร็วขึ้น ไม่มีครูหรือห้องเรียนถูกจองซ้อนกัน และครูกับนักเรียนเปิดดูตารางผ่านมือถือได้ทุกเวลา
+          </p>
+          <ul class="points">
+            <li><strong>ลากแล้ววาง</strong>คาบเรียนลงตาราง ระบบตรวจทันทีว่าครูหรือห้องเรียนชนกันหรือไม่</li>
+            <li><strong>ล็อกคาบกิจกรรม</strong>ที่หลายห้องเรียนร่วมกัน (เช่น ชุมนุม เข้าแถว) และคัดลอกตารางจากภาคเรียนก่อนมาแก้ต่อได้</li>
+            <li>ออกตารางครู ตารางนักเรียน และตารางสรุปรวม <strong>เป็น Excel และ PDF</strong> พร้อมสิทธิ์ผู้ใช้ 3 ระดับ (แอดมิน / ครู / นักเรียน)</li>
+            <li>รองรับโครงสร้างหลักสูตรตามกระทรวงศึกษาธิการ มี <strong>E2E test ด้วย Playwright</strong> และ CI/CD บน GitHub Actions</li>
+          </ul>
+          <ul class="stack">
+            <li>Next.js 16</li><li>React 19</li><li>TypeScript</li><li>Prisma</li><li>PostgreSQL</li><li>MUI</li><li>Better Auth</li><li>Playwright</li>
+          </ul>
+          <a class="link" href="https://github.com/yukimura-ixa/school-timetable-senior-project" target="_blank" rel="noopener">ดูซอร์สโค้ด ↗</a>
+        </div>
+        <div class="feature-visual" aria-hidden="true">
+          <div class="tt">
+            <div class="tt-head"><span>ม.4/1 · ภาคเรียนที่ 1</span><span class="tt-ok">✓ ไม่มีคาบชน</span></div>
+            <div class="tt-grid">
+              <span class="tt-day"></span><span class="tt-p">1</span><span class="tt-p">2</span><span class="tt-p">3</span><span class="tt-p">4</span><span class="tt-p">5</span>
+              <span class="tt-day">จ.</span><span class="c c1">คณิต</span><span class="c c2">ไทย</span><span class="c c3">อังกฤษ</span><span class="c lunch">พัก</span><span class="c c4">ฟิสิกส์</span>
+              <span class="tt-day">อ.</span><span class="c c3">อังกฤษ</span><span class="c c5">เคมี</span><span class="c c5">เคมี</span><span class="c lunch">พัก</span><span class="c c1">คณิต</span>
+              <span class="tt-day">พ.</span><span class="c lock">เข้าแถว 🔒</span><span class="c c2">ไทย</span><span class="c c6">สังคม</span><span class="c lunch">พัก</span><span class="c drag">คอมฯ</span>
+              <span class="tt-day">พฤ.</span><span class="c c4">ฟิสิกส์</span><span class="c c1">คณิต</span><span class="c c6">สังคม</span><span class="c lunch">พัก</span><span class="c lock">ชุมนุม 🔒</span>
+              <span class="tt-day">ศ.</span><span class="c c2">ไทย</span><span class="c c3">อังกฤษ</span><span class="c empty"></span><span class="c lunch">พัก</span><span class="c c5">ชีวะ</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Botty -->
+      <article class="feature feature-alt reveal">
+        <div class="feature-body">
+          <div class="feature-tags"><span class="badge">LINE LIFF</span><span class="badge">AI</span></div>
+          <h3>Botty — แอปสะสมแต้มรีไซเคิลขวดพลาสติกบน LINE</h3>
+          <p>
+            แอปสำหรับโรงเรียนที่เปิดใช้ได้ในแอป LINE ทันทีโดยไม่ต้องติดตั้งเพิ่ม นักเรียนถ่ายรูปขวดพลาสติกที่นำมาทิ้ง
+            AI จะตรวจว่าเป็นขวดจริง แล้วให้แต้มและเหรียญ แต้มใช้ขึ้นกระดานอันดับ ส่วนเหรียญใช้ซื้อของตกแต่งสวนต้นไม้ของตัวเอง
+            ทำให้การแยกขยะกลายเป็นเกมที่นักเรียนอยากกลับมาเล่นทุกวัน
+          </p>
+          <ul class="points">
+            <li>ล็อกอินด้วยบัญชี LINE ผ่าน <strong>LIFF</strong> แล้วแลกเป็น Firebase custom token</li>
+            <li><strong>ระบบกันโกงหลายชั้น:</strong> ตรวจรูปซ้ำ, เว้นระยะ 60 วินาที, จำกัด 20 ครั้งต่อวัน และต้องสแกน QR ของเจ้าหน้าที่ที่เปลี่ยนทุก 30 วินาทีก่อนได้แต้ม</li>
+            <li>ระบบเกม: ระดับต้นไม้ 4 ขั้น, สะสมวันต่อเนื่อง (streak), ร้านค้า, สวนแบบลากวาง และกระดานอันดับระดับห้อง / ชั้น / ทั้งโรงเรียน</li>
+            <li>แดชบอร์ดครูส่งออกข้อมูลไป Google Sheets ได้ การปรับแต้มเกิน ±10 ต้องให้แอดมินอีกคน <strong>อนุมัติซ้ำ</strong></li>
+          </ul>
+          <ul class="stack">
+            <li>Next.js 16</li><li>React 19</li><li>Firebase</li><li>Firestore</li><li>LINE LIFF</li><li>Vercel Blob</li><li>Tailwind CSS</li><li>Vitest</li>
+          </ul>
+          <a class="link" href="https://github.com/yukimura-ixa/botty-liff-app" target="_blank" rel="noopener">ดูซอร์สโค้ด ↗</a>
+        </div>
+        <div class="feature-visual phones" aria-label="ภาพหน้าจอแอป Botty">
+          <figure class="phone p1"><img src="assets/img/botty-home.webp" alt="หน้าหลักของแอป Botty แสดงแต้มสะสมและระดับต้นไม้" loading="lazy" width="390" height="844"></figure>
+          <figure class="phone p2"><img src="assets/img/botty-leaderboard.webp" alt="กระดานอันดับของแอป Botty" loading="lazy" width="390" height="844"></figure>
+          <figure class="phone p3"><img src="assets/img/botty-shop.webp" alt="ร้านค้าของตกแต่งสวนในแอป Botty" loading="lazy" width="390" height="844"></figure>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ MORE PROJECTS ============ -->
+  <section class="section section-tint">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="kicker">02 — ผลงานอื่น ๆ</p>
+        <h2>โปรเจกต์อื่น</h2>
+      </header>
+
+      <div class="cards cards-single">
+
+
+
+        <article class="card reveal">
+          <p class="card-type">IoT · ฝึกงานญี่ปุ่น</p>
+          <h3>Smart Hydroponics IoT Dashboard</h3>
+          <p>พัฒนาแดชบอร์ด IoT สำหรับระบบปลูกพืชไฮโดรโปนิกส์อัจฉริยะ ระหว่างฝึกงาน 1 เดือนที่ National Institute of Technology, Sendai College ประเทศญี่ปุ่น ได้ทั้งประสบการณ์งานด้านฮาร์ดแวร์ + ซอฟต์แวร์ และการทำงานร่วมกับทีมต่างชาติ</p>
+          <ul class="stack"><li>IoT</li><li>Dashboard</li></ul>
+        </article>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section id="experience" class="section">
+    <div class="wrap two-col">
+      <div>
+        <header class="section-head">
+          <p class="kicker">03 — ประสบการณ์</p>
+          <h2>การทำงาน</h2>
+        </header>
+        <ol class="timeline">
+          <li class="reveal">
+            <h3>เจ้าหน้าที่คอมพิวเตอร์และสารสนเทศ</h3>
+            <p class="where">สหกรณ์ออมทรัพย์ครูมัธยมศึกษานครพนม จำกัด</p>
+            <p>ดูแลระบบไอที เครือข่าย และเว็บไซต์ขององค์กร พัฒนาเครื่องมือเว็บขนาดเล็กเพื่อลดงานซ้ำซ้อนในสำนักงาน (เช่น แดชบอร์ดรายงานการเงิน) และออกแบบสื่อประชาสัมพันธ์ จดหมายข่าว และโปสเตอร์</p>
+          </li>
+          <li class="reveal">
+            <h3>Frontend Developer (ฟรีแลนซ์)</h3>
+            <p class="where">Duck Lab Co., Ltd.</p>
+            <p>พัฒนาส่วนหน้าเว็บด้วย SvelteKit <span class="muted">(รายละเอียดโปรเจกต์อยู่ภายใต้สัญญาไม่เปิดเผยข้อมูล)</span></p>
+          </li>
+          <li class="reveal">
+            <h3>นักพัฒนา Arduino / IoT (ฟรีแลนซ์)</h3>
+            <p class="where">งานอิสระ</p>
+            <p>รับทำโปรเจกต์ไมโครคอนโทรลเลอร์และอุปกรณ์ IoT ตามโจทย์ของลูกค้า</p>
+          </li>
+          <li class="reveal">
+            <h3>นักศึกษาฝึกงาน</h3>
+            <p class="where">National Institute of Technology, Sendai College · ญี่ปุ่น</p>
+            <p>ฝึกงาน 1 เดือน พัฒนา Smart Hydroponics IoT Dashboard</p>
+          </li>
+        </ol>
+      </div>
+
+      <div>
+        <header class="section-head">
+          <p class="kicker">การศึกษา</p>
+          <h2>KMITL</h2>
+        </header>
+        <div class="edu reveal">
+          <h3>วิทยาศาสตรบัณฑิต สาขาเทคโนโลยีสารสนเทศ</h3>
+          <p class="where">คณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</p>
+          <div class="edu-stats">
+            <div><span class="num">3.53</span><small>เกรดเฉลี่ยสะสม</small></div>
+            <div><span class="num">อันดับ 1</span><small>เกียรตินิยม</small></div>
+            <div><span class="num">840</span><small>คะแนน TOEIC</small></div>
+          </div>
+          <p class="muted small">โปรเจกต์จบ: ระบบจัดตารางเรียนตารางสอน (ปีการศึกษา 2566)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section id="skills" class="section section-tint">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="kicker">04 — ทักษะ</p>
+        <h2>เครื่องมือที่ใช้ทำงาน</h2>
+      </header>
+      <div class="skills">
+        <div class="skill-group reveal">
+          <h3>Frontend</h3>
+          <ul class="stack"><li>React</li><li>Next.js</li><li>TypeScript</li><li>Svelte / SvelteKit</li><li>Tailwind CSS</li><li>Material UI</li></ul>
+        </div>
+        <div class="skill-group reveal">
+          <h3>Backend</h3>
+          <ul class="stack"><li>Node.js</li><li>Go (Gin)</li><li>Prisma</li><li>REST API</li><li>Google Apps Script</li><li>Python</li></ul>
+        </div>
+        <div class="skill-group reveal">
+          <h3>ฐานข้อมูล</h3>
+          <ul class="stack"><li>PostgreSQL</li><li>MySQL</li><li>Firebase / Firestore</li><li>Supabase</li><li>SQLite</li></ul>
+        </div>
+        <div class="skill-group reveal">
+          <h3>DevOps & Cloud</h3>
+          <ul class="stack"><li>Docker</li><li>Google Cloud</li><li>Vercel</li><li>GitHub Actions</li><li>Git</li></ul>
+        </div>
+        <div class="skill-group reveal">
+          <h3>Testing</h3>
+          <ul class="stack"><li>Playwright</li><li>Vitest</li><li>Go testing</li></ul>
+        </div>
+        <div class="skill-group reveal">
+          <h3>อื่น ๆ</h3>
+          <ul class="stack"><li>LINE LIFF / Messaging API</li><li>Arduino / IoT</li><li>WordPress</li><li>ออกแบบสื่อ (Canva)</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="contact">
+    <div class="wrap contact-inner">
+      <p class="kicker kicker-light">05 — ติดต่อ</p>
+      <h2>กำลังมองหาโอกาสใหม่<br>ในสาย Developer ครับ</h2>
+      <p>ยินดีรับงานประจำ งานสัญญาจ้าง หรือพูดคุยเรื่องโปรเจกต์ ติดต่อได้ทางอีเมลครับ</p>
+      <div class="hero-actions">
+        <a href="mailto:napat.pbd@gmail.com" class="btn btn-light">napat.pbd@gmail.com</a>
+        <a href="https://github.com/yukimura-ixa" class="btn btn-outline-light" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">© <span id="year">2026</span> ณภัทร พ่อบุตรดี</div>
+</footer>
+
+<script>
+  // mobile menu
+  const toggle = document.querySelector('.nav-toggle');
+  const links = document.querySelector('.nav-links');
+  toggle.addEventListener('click', () => {
+    const open = links.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+  });
+  links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    links.classList.remove('open'); toggle.setAttribute('aria-expanded', false);
+  }));
+
+  // fade-in on scroll
+  document.documentElement.classList.add('js');
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
