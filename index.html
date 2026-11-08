@@ -116,12 +116,13 @@
           </p>
           <ul class="points">
             <li>ล็อกอินด้วยบัญชี LINE ผ่าน <strong>LIFF</strong> แล้วแลกเป็น Firebase custom token</li>
-            <li><strong>ระบบกันโกงหลายชั้น:</strong> ตรวจรูปซ้ำ, เว้นระยะ 60 วินาที, จำกัด 20 ครั้งต่อวัน และต้องสแกน QR ของเจ้าหน้าที่ที่เปลี่ยนทุก 30 วินาทีก่อนได้แต้ม</li>
+            <li><strong>ระบบกันโกงหลายชั้น:</strong> ตรวจรูปซ้ำทั้งรูปเดิมและรูปที่คล้ายกัน, จำกัด 10 ขวดต่อวัน และเวลารอระหว่างสแกนเพิ่มเป็นเท่าตัวทุกครั้ง (ตั้งแต่ 60 วินาที ถึง 4 ชั่วโมง)</li>
+            <li>ส่ง AI ตรวจรูปและอัปโหลดรูปพร้อมกันเพื่อให้สแกนเร็วขึ้น และให้แต้มด้วย <strong>Firestore transaction</strong> จึงไม่ได้แต้มซ้ำแม้ส่งรูปเดิมสองครั้ง มีระบบ QR เจ้าหน้าที่ที่เปลี่ยนทุก 30 วินาทีให้เปิดใช้ได้เมื่อต้องการยืนยันเพิ่ม</li>
             <li>ระบบเกม: ระดับต้นไม้ 4 ขั้น, สะสมวันต่อเนื่อง (streak), ร้านค้า, สวนแบบลากวาง และกระดานอันดับระดับห้อง / ชั้น / ทั้งโรงเรียน</li>
             <li>แดชบอร์ดครูส่งออกข้อมูลไป Google Sheets ได้ การปรับแต้มเกิน ±10 ต้องให้แอดมินอีกคน <strong>อนุมัติซ้ำ</strong></li>
           </ul>
           <ul class="stack">
-            <li>Next.js 16</li><li>React 19</li><li>Firebase</li><li>Firestore</li><li>LINE LIFF</li><li>Vercel Blob</li><li>Tailwind CSS</li><li>Vitest</li>
+            <li>Next.js 16</li><li>React 19</li><li>Firebase</li><li>Firestore</li><li>LINE LIFF</li><li>Roboflow AI</li><li>Vercel Blob</li><li>Tailwind CSS</li><li>Vitest</li>
           </ul>
           <a class="link" href="https://github.com/yukimura-ixa/botty-liff-app" target="_blank" rel="noopener">ดูซอร์สโค้ด ↗</a>
         </div>
